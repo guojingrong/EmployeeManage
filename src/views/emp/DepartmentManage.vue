@@ -219,14 +219,12 @@
                                         },
                                         on: {
                                             click: () => {
-                                                this.isConfigEmpHidden = true;
-                                                this.emptargetkeys = []; //先将目标清空
-                                                this.queryPosition(params.row.deptCode);
-                                                this.queryEmp();
+                                                this.isConfigPosHidden = true;
+                                                this.queryPos();
                                             }
                                         }
                                     },
-                                    "资源配置"
+                                    "岗位配置"
                                 ),
                                 h(
                                     "Button", {
@@ -239,13 +237,16 @@
                                         },
                                         on: {
                                             click: () => {
-                                                this.isConfigPosHidden = true;
-                                                this.queryPos();
+                                                this.isConfigEmpHidden = true;
+                                                this.emptargetkeys = []; //先将目标清空
+                                                this.queryPosition(params.row.deptCode);
+                                                this.queryEmp();
                                             }
                                         }
                                     },
-                                    "岗位配置"
-                                )
+                                    "资源配置"
+                                ),
+                                
                             ]);
                         }
                     }
