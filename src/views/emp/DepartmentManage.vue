@@ -290,7 +290,7 @@
                     url: this.$config.url.server + "/depart/pagelist?r=" + new Date().getTime(),
                     data: data,
                     headers: {
-                        // Authorization: "Bearer " + this.$confjs.token
+                        Authorization: "Bearer " + this.$config .token,
                         "Content-Type": "application/json"
                     }
                 }).then(res => {
@@ -309,7 +309,7 @@
                     method: "get",
                     url: this.$config.url.server + "/depart/position/" + code + "?r=" + new Date().getTime(),
                     headers: {
-                        // Authorization: "Bearer " + this.$confjs.token
+                        Authorization: "Bearer " + this.$config .token,
                         "Content-Type": "application/json"
                     }
                 }).then(res => {
@@ -331,7 +331,7 @@
                     method: "get",
                     url: this.$config.url.server + "/depart/position?key=" + this.poskey ,//+ "?r=" + new Date().getTime(),
                     headers: {
-                        // Authorization: "Bearer " + this.$confjs.token
+                        Authorization: "Bearer " + this.$config .token,
                         "Content-Type": "application/json"
                     }
                 }).then(res => {
@@ -365,7 +365,7 @@
                         url: this.$config.url.server + "/emp/pagelist?r=" + new Date().getTime(),
                         data: data,
                         headers: {
-                            // Authorization: "Bearer " + this.$confjs.token
+                            Authorization: "Bearer " + this.$config .token,
                             "Content-Type": "application/json"
                         }
                     })
@@ -407,7 +407,7 @@
                             method: "get",
                             url: url,
                             headers: {
-                                // Authorization: "Bearer " + this.$confjs.token
+                                Authorization: "Bearer " + this.$config .token,
                                 // "Content-Type": "application/json"
                             }
                         }).then(res => {

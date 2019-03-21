@@ -85,7 +85,7 @@
             <template slot="title">
               <Icon type="ios-stats"/>统计分析
             </template>
-            <MenuItem name="3-1">年龄段分析</MenuItem>
+            <MenuItem name="3-1" to="/age">年龄段分析</MenuItem>
             <MenuItem name="3-2">薪资分析</MenuItem>
             <MenuItem name="3-3">考勤分析</MenuItem>
           </Submenu>

@@ -362,7 +362,7 @@
             method: "get",
             url: this.$config.url.server + "/emp/getby/" + id + "?r=" + new Date().getTime(),
             headers: {
-              // Authorization: "Bearer " + this.$confjs.token
+              Authorization: "Bearer " + this.$config.token,
               "Content-Type": "application/json"
             }
           })
@@ -417,10 +417,10 @@
         };
         axios({
             method: "post",
-            url: this.$config.url.server + "/emp/pagelist?r=" + new Date().getTime(),
+            url: this.$config.url.server + "/emp/pagelist" ,//+ new Date().getTime(),
             data: data,
             headers: {
-              // Authorization: "Bearer " + this.$confjs.token
+              Authorization: "Bearer " + this.$config.token,
               "Content-Type": "application/json"
             }
           })
@@ -465,7 +465,7 @@
                   url: this.$config.url.server + "/emp/insert",
                   data: data,
                   headers: {
-                    // Authorization: "Bearer " + this.$confjs.token
+                    Authorization: "Bearer " + this.$config.token,
                     "Content-Type": "application/json"
                   }
                 })
@@ -503,7 +503,7 @@
                   url: this.$config.url.server + "/emp/modify",
                   data: data,
                   headers: {
-                    // Authorization: "Bearer " + this.$confjs.token
+                    Authorization: "Bearer " + this.$config.token,
                     "Content-Type": "application/json"
                   }
                 })
@@ -558,7 +558,7 @@
             method: "get",
             url: this.$config.url.server + "/emp/code?r=" + new Date().getTime(),
             headers: {
-              // Authorization: "Bearer " + this.$confjs.token
+              Authorization: "Bearer " + this.$config.token,
               "Content-Type": "application/json"
             }
           })

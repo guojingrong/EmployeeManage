@@ -1,4 +1,5 @@
 var config = {
+    token:"eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1Yjk1MmM3MTQ0NzIxMWU5OGM5NGU4NmE2NDVkZDk1NSIsInBhc3N3b3JkIjoiMXEydzNlNHIiLCJyb2xlIjoiMTAwOSIsImlzcyI6InljZ3VvIiwiZXhwIjoxNTU0NTU5MzAwLCJpYXQiOjE1NTMwODgwNzIsImp0aSI6ImUyMmFkNzdlLTE4YmQtNDVmNC1hNjlkLTQwMjc1NzM5MmUyMiIsInVzZXJuYW1lIjoieWNndW8ifQ.N25NyFYw02AAskjeL_PwInkgeWhPY1E3MkXv1TGIabM",
     url: {
         local: "/lapi",
         server: "/sapi"

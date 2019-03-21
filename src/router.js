@@ -58,6 +58,14 @@ export default new Router({
                         title:"用户管理"
                     },
                     component:()=>import("@/views/sys/UserManage.vue")
+                },
+                {
+                    path: "/age",
+                    name:"age",
+                    meta:{
+                        title:"年龄段统计"
+                    },
+                    component:()=>import("@/views/total/Age.vue")
                 }
 
             ]
